@@ -2,9 +2,10 @@
 This repository contains the analysis of protein prediction based on global similarity, domain, and structure.
 
 ## Requirments ##
-*Python 3+
-*cd-hit v4.8.1
-*diamond
+* Python 3+   
+* cd-hit v4.8.1   
+* diamond
+
 ## Fetch protein sequences from NCBI using E-Utilities ##
 ```
 usage: fetch_pro.py [-h] -i INPUT -o OUTPUT
