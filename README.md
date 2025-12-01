@@ -1,5 +1,7 @@
 # Workflow for protein prediction #
 
+## Requirments ##
+
 ## Fetch protein sequences from NCBI using E-Utilities ##
 ```
 usage: fetch_pro.py [-h] -i INPUT -o OUTPUT
