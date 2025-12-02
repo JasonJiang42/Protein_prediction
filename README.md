@@ -6,7 +6,7 @@ This repository contains the analysis of protein prediction based on global simi
 * cd-hit v4.8.1   
 * diamond
 
-## Fetch protein sequences from NCBI using E-Utilities ##
+## 1. Fetch protein sequences from NCBI using E-Utilities ##
 ```
 usage: fetch_pro.py [-h] -i INPUT -o OUTPUT
 
@@ -17,6 +17,10 @@ options:
   -i, --input INPUT    Input file containing protein IDs (one per line).
   -o, --output OUTPUT  Output file to save protein sequences.
 ```
+============================================================
+## 2. Rename header to include species name ##
+============================================================
+
 ## CD-hits to generate UniRef90 proteins ##
 ```
 cd-hit -i input.faa -o output.faa -c 0.9 -aS 0.8 -aL 0.8
