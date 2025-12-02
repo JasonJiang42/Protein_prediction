@@ -23,7 +23,7 @@ options:
 The input protein file should be {species/genus}.faa format.
 ```
 for file in *.faa; do
-  sp={file%.faa}
+  sp=${file%.faa}
   sed "s/^>/>${sp}|/" "$file" > "${sp}.renamed.faa"
 done
 
