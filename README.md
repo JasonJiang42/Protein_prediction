@@ -17,9 +17,19 @@ options:
   -i, --input INPUT    Input file containing protein IDs (one per line).
   -o, --output OUTPUT  Output file to save protein sequences.
 ```
-============================================================
+
 ## 2. Rename header to include species name ##
-============================================================
+
+The input protein file should be {species/genus}.faa format.
+```
+for file in *.faa; do
+  sp={file%.faa}
+  sed "s/^>/>${sp}|/" "$file" > "${sp}.renamed.faa"
+done
+
+## then pool all renamed protein files
+cat *.renamed.faa > all_species.faa
+```
 
 ## CD-hits to generate UniRef90 proteins ##
 ```
