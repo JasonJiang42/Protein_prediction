@@ -33,7 +33,7 @@ cat *.renamed.faa > all_species.faa
 
 ## 3. CD-hits to generate UniRef90 proteins ##
 ```
-cd-hit -i all_species.faa -o all_species.cdhit90.faa -c 0.9 -aS 0.8 -aL 0.8
+cd-hit -i all_species.faa -o all_species.cdhit90.faa -c 0.9 -aS 0.8 -aL 0.8 -d 0
 ```
 
 Creates:
