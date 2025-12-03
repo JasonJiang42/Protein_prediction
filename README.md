@@ -134,7 +134,7 @@ Output:
 - panproteome_db.dmnd
 
 ```
-diamond blastp -q query.faa -d panproteom_db -o query_vs_pan.tsv
+diamond blastp -q query.faa -d panproteom_db -o query_vs_pan.tsv --id 30 -f 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp
 ```
 DIAMOND hits will contain full headers such as:
 ```
