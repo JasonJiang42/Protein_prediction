@@ -141,3 +141,7 @@ DIAMOND hits will contain full headers such as:
 Query1  Ecoli|ABC123|CLUSTER_SPECIES:Ecoli,Bsubtilis,Salmonella  95.0  ...
 ```
 
+## 7. Domain prediction using hmmscan
+```
+hmmscan --cpu 4 --domtblout results.domtbl Pfam-A.hmm query.fasta > results.txt
+```
