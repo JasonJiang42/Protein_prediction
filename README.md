@@ -1,4 +1,4 @@
-# Workflow for protein prediction #
+# Workflow for protein prediction on species level #
 This repository contains the analysis of protein prediction based on global similarity, domain, and structure.
 
 ## Requirments ##
@@ -6,19 +6,8 @@ This repository contains the analysis of protein prediction based on global simi
 * cd-hit v4.8.1   
 * diamond
 
-## 1. Fetch protein sequences from NCBI using E-Utilities ##
-```
-usage: fetch_pro.py [-h] -i INPUT -o OUTPUT
 
-A script to download protein sequences using NCBI E-Utilities.
-
-options:
-  -h, --help           show this help message and exit
-  -i, --input INPUT    Input file containing protein IDs (one per line).
-  -o, --output OUTPUT  Output file to save protein sequences.
-```
-
-## 2. Rename header to include species name ##
+## 1. Rename header to include species name ##
 
 The input protein file should be {species/genus}.faa format.
 ```
@@ -31,7 +20,7 @@ done
 cat *.renamed.faa > all_species.faa
 ```
 
-## 3. CD-hits to generate UniRef90 proteins ##
+## 3. CD-hits to generate UniClstr90 proteins ##
 ```
 cd-hit -i all_species.faa -o all_species.cdhit90.faa -c 0.9 -aS 0.8 -aL 0.8 -d 0
 ```
