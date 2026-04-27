@@ -283,13 +283,13 @@ python3 prot_homology.py structure-msa \
   --output structure_prediction/
 ```
 
-### HPC Steps (agis-hpc GPU cluster)
+### HPC Steps (GPU cluster)
 
 ```bash
 # 6. Submit ColabFold job
 python3 prot_homology.py structure-predict \
   --input structure_prediction/ \
-  --output /scratch/jiangshuo/colabfold/ \
+  --output colabfold/ \
   --weights /path/to/weights \
   --partition NV_4090D --gpus 1 --cpus 8
 
