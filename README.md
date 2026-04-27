@@ -1,6 +1,6 @@
 # Protein Homology Analysis Pipeline
 
-A unified computational pipeline for **IgA protease homolog prediction** using sequence similarity, protein domain architecture, and 3D structure modeling.
+A unified computational pipeline for **homolog prediction** using sequence similarity, protein domain architecture, and 3D structure modeling.
 
 ---
 
